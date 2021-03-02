@@ -139,7 +139,7 @@ class SSD1331(DisplaySPI):
         with self.spi_device as spi:
             if command is not None:
                 spi.write(bytearray([command]))
-                print(bytearray([command]))
+                #print(bytearray([command]))
             if data is not None:
                 spi.write(data)
-                print(data)
+                #print(data)
